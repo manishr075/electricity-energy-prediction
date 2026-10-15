@@ -1,0 +1,47 @@
+{
+  "dataset_rows_raw": 19735,
+  "dataset_columns_raw": 29,
+  "prepared_rows": 19734,
+  "train_rows": 15787,
+  "test_rows": 3947,
+  "target": "target_next_10min_Wh",
+  "features": [
+    "appliances_current_Wh",
+    "lights_Wh",
+    "T1_C",
+    "RH_1_pct",
+    "T2_C",
+    "RH_2_pct",
+    "T_out_C",
+    "RH_out_pct",
+    "Windspeed_m_s",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos"
+  ],
+  "learning_rate": 0.03,
+  "iterations": 2500,
+  "initial_training_mse_standardized": 1.0000000000000002,
+  "final_training_mse_standardized": 0.4174188943635484,
+  "training_loss_reduction_percent": 58.25811056364517,
+  "train_end_time": "2016-04-30 08:00:00",
+  "test_start_time": "2016-04-30 08:10:00",
+  "test_end_time": "2016-05-27 18:00:00",
+  "manual_gradient_descent": {
+    "MAE_Wh": 26.495035098747746,
+    "RMSE_Wh": 61.32671411988879,
+    "R2": 0.5462162719775975
+  },
+  "sklearn_linear_regression": {
+    "MAE_Wh": 26.495498314814625,
+    "RMSE_Wh": 61.32695007957387,
+    "R2": 0.5462127800288413
+  },
+  "mean_baseline": {
+    "MAE_Wh": 52.68607250284936,
+    "RMSE_Wh": 91.053478727169,
+    "R2": -0.0003284316132494691
+  },
+  "note": "Metrics are produced by running this script on the downloaded UCI dataset."
+}
